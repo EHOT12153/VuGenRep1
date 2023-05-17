@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\NICK\Desktop\Repository2\Scripts\UC_RegisterCustomer
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\nick\desktop\repository2\scripts\uc_registercustomer\\logfile.log
+c:\users\nick\desktop\repository2\scripts\uc_registercustomer\\combined_UC_RegisterCustomer.c
+c:\users\nick\desktop\repository2\scripts\uc_registercustomer\\pre_cci.c

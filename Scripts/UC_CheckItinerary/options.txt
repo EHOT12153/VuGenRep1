@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\NICK\Desktop\Repository2\Scripts\UC_CheckItinerary
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\nick\desktop\repository2\scripts\uc_checkitinerary\\logfile.log
+c:\users\nick\desktop\repository2\scripts\uc_checkitinerary\\combined_UC_CheckItinerary.c
+c:\users\nick\desktop\repository2\scripts\uc_checkitinerary\\pre_cci.c

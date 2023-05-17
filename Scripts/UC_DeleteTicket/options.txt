@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\NICK\Desktop\Repository2\Scripts\UC_DeleteTicket
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\nick\desktop\repository2\scripts\uc_deleteticket\\logfile.log
+c:\users\nick\desktop\repository2\scripts\uc_deleteticket\\combined_UC_DeleteTicket.c
+c:\users\nick\desktop\repository2\scripts\uc_deleteticket\\pre_cci.c
