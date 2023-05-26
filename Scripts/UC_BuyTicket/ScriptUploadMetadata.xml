@@ -28,6 +28,15 @@
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrvb0u.401.log" Filter="1" />
+    <FileEntry Name="mdrvCcB.197.log" Filter="1" />
+    <FileEntry Name="mdrvEtg.237.log" Filter="1" />
+    <FileEntry Name="mdrvNSJ.221.log" Filter="1" />
+    <FileEntry Name="mdrvNsl.73.log" Filter="1" />
+    <FileEntry Name="mdrvSFz.569.log" Filter="1" />
+    <FileEntry Name="mdrvUOi.393.log" Filter="1" />
+    <FileEntry Name="mdrvw71.695.log" Filter="1" />
+    <FileEntry Name="mdrvyBn.305.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
@@ -35,6 +44,7 @@
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC_BuyTicket.c.pickle" Filter="1" />
     <FileEntry Name="UC_BuyTicket.ci" Filter="1" />
     <FileEntry Name="UC_BuyTicket.prm.bak" Filter="1" />

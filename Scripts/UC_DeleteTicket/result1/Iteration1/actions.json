@@ -6,68 +6,68 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t2.inf",
-                "time": 1684333810210
+                "time": 1684539856363
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t3.inf",
-                "time": 1684333810938
+                "time": 1684539857353
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: Itinerary Button",
                 "infFile": "t4.inf",
-                "time": 1684333811577
+                "time": 1684539858118
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Form: itinerary.pl",
                 "infFile": "t5.inf",
-                "time": 1684333811965
+                "time": 1684539858763
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: SignOff Button",
                 "infFile": "t6.inf",
-                "time": 1684333812349
+                "time": 1684539859358
             }
         ],
         "transactions": [
             {
                 "transactionName": "login",
-                "rawStartTime": 1684333810243,
-                "rawEndTime": 1684333810938,
+                "rawStartTime": 1684539856389,
+                "rawEndTime": 1684539857354,
                 "thinkTime": 0.0,
-                "wastedTime": 0.017489194869995118
+                "wastedTime": 0.031211376190185548
             },
             {
                 "transactionName": "itinenraryTray",
-                "rawStartTime": 1684333810946,
-                "rawEndTime": 1684333811584,
+                "rawStartTime": 1684539857358,
+                "rawEndTime": 1684539858151,
                 "thinkTime": 0.0,
-                "wastedTime": 0.019823074340820314
+                "wastedTime": 0.0184323787689209
             },
             {
                 "transactionName": "deleteTicket",
-                "rawStartTime": 1684333811616,
-                "rawEndTime": 1684333811981,
+                "rawStartTime": 1684539858185,
+                "rawEndTime": 1684539858771,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01307225227355957
+                "wastedTime": 0.01234126091003418
             },
             {
                 "transactionName": "signOut",
-                "rawStartTime": 1684333812014,
-                "rawEndTime": 1684333812350,
+                "rawStartTime": 1684539858804,
+                "rawEndTime": 1684539859359,
                 "thinkTime": 0.0,
-                "wastedTime": 0.009279012680053711
+                "wastedTime": 0.012563467025756836
             },
             {
                 "transactionName": "UC3_DeleteTicket",
-                "rawStartTime": 1684333809546,
-                "rawEndTime": 1684333812363,
+                "rawStartTime": 1684539855488,
+                "rawEndTime": 1684539859376,
                 "thinkTime": 0.0,
-                "wastedTime": 0.35315871238708498
+                "wastedTime": 0.42525601387023928
             }
         ]
     }

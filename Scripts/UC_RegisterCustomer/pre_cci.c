@@ -2662,7 +2662,9 @@ Action()
 
 	lr_start_transaction("UC5_CustomerRegistration");
 		
-	lr_start_transaction("register");
+	
+	
+	lr_start_transaction("loginPage");
 
 	web_url("WebTours", 
 		"URL=http://localhost:1080/WebTours/", 
@@ -2675,9 +2677,12 @@ Action()
 		"LAST");
 
 	lr_think_time(21);
-
-	lr_start_transaction("signup");
 	
+	lr_end_transaction("loginPage", 2);
+	
+	lr_start_transaction("signUpPage");
+
+		
 
 	web_reg_find("Text=Please choose a username and password combination for your account.",
 		"LAST");
@@ -2693,6 +2698,11 @@ Action()
 		"LAST");
 
 	lr_think_time(24);
+	
+	lr_end_transaction("signUpPage", 2);
+	
+	
+	lr_start_transaction("registrationData");
 	
 	web_reg_find("Text=Thank you, <b>{l1}{l2}{l3}{l4}</b>, for registering and welcome to the Web Tours family.",
 		"LAST");
@@ -2716,10 +2726,13 @@ Action()
 		"Name=register.x", "Value=46", "ENDITEM", 
 		"Name=register.y", "Value=4", "ENDITEM", 
 		"LAST");
+	
+	lr_end_transaction("registrationData",2);
 
-	lr_end_transaction("signup",2);
-
+	
 	lr_think_time(7);
+	
+	lr_start_transaction("pageAfterRegistaration");
 
 	web_reg_find("Text=Welcome, <b>{l1}{l2}{l3}{l4}</b>, to the Web Tours reservation pages.",
 		"LAST");
@@ -2734,7 +2747,7 @@ Action()
 		"Mode=HTML", 
 		"LAST");
 
-	lr_end_sub_transaction("register", 2);
+	lr_end_transaction("pageAfterRegistaration",2);
 	
 	lr_end_transaction("UC5_CustomerRegistration", 2);
 

@@ -24,6 +24,15 @@
     <FileEntry Name="l2.dat" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv9Cf.501.log" Filter="1" />
+    <FileEntry Name="mdrvaa9.515.log" Filter="1" />
+    <FileEntry Name="mdrvAXh.883.log" Filter="1" />
+    <FileEntry Name="mdrvCaJ.863.log" Filter="1" />
+    <FileEntry Name="mdrvIy8.307.log" Filter="1" />
+    <FileEntry Name="mdrvjFw.171.log" Filter="1" />
+    <FileEntry Name="mdrvkp6.779.log" Filter="1" />
+    <FileEntry Name="mdrvveN.137.log" Filter="1" />
+    <FileEntry Name="mdrvxuO.681.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />
@@ -31,6 +40,7 @@
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC_RegisterCustomer.c.pickle" Filter="1" />
     <FileEntry Name="UC_RegisterCustomer.ci" Filter="1" />
     <FileEntry Name="UC_RegisterCustomer.prm.bak" Filter="1" />

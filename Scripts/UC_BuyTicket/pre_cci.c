@@ -2694,7 +2694,7 @@ lr_start_transaction("loginPage");
 		
 		lr_end_transaction("loginPage",2);
 		
-		
+
 
 	lr_think_time(19);
 	
@@ -2716,6 +2716,12 @@ lr_start_transaction("loginPage");
 		"LAST");
 
 	lr_think_time(4);
+	
+	lr_end_transaction("flights", 2);
+	
+	lr_start_transaction("typeData");
+	
+	
 	
 	web_reg_find("Text=From",
 		"LAST");
@@ -2772,7 +2778,7 @@ lr_start_transaction("loginPage");
 		
 		lr_save_string((lr_paramarr_random("outboundFlight")),"randomFlight");
 
-	lr_end_transaction("flights",2);
+	lr_end_transaction("typeData",2);
 
 	lr_think_time(17);
 
@@ -2839,6 +2845,20 @@ lr_start_transaction("loginPage");
 	lr_end_transaction("personalData",2);
 
 	lr_think_time(53);
+	
+	lr_start_transaction("checkItinerary");
+	
+	web_reg_find("Text={FirstName} {LastName}","LAST");
+
+	web_url("Itinerary Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t3.inf", 
+		"Mode=HTML", 
+		"LAST");
 
 	logout();
 	

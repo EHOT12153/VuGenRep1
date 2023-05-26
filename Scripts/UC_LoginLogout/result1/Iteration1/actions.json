@@ -6,42 +6,42 @@
                 "stepId": "STEP1",
                 "stepName": "Url: WebTours",
                 "infFile": "t2.inf",
-                "time": 1684333837618
+                "time": 1684540009321
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Submit Data: login.pl",
                 "infFile": "t3.inf",
-                "time": 1684333838184
+                "time": 1684540010038
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Url: SignOff Button",
                 "infFile": "t4.inf",
-                "time": 1684333838912
+                "time": 1684540010623
             }
         ],
         "transactions": [
             {
                 "transactionName": "login",
-                "rawStartTime": 1684333837650,
-                "rawEndTime": 1684333838184,
+                "rawStartTime": 1684540009350,
+                "rawEndTime": 1684540010039,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01827239990234375
+                "wastedTime": 0.0220794677734375
             },
             {
                 "transactionName": "signOut",
-                "rawStartTime": 1684333838212,
-                "rawEndTime": 1684333838912,
+                "rawStartTime": 1684540010064,
+                "rawEndTime": 1684540010624,
                 "thinkTime": 0.0,
-                "wastedTime": 0.010980606079101563
+                "wastedTime": 0.01113128662109375
             },
             {
                 "transactionName": "UC4_LoginLogout",
-                "rawStartTime": 1684333836950,
-                "rawEndTime": 1684333838926,
+                "rawStartTime": 1684540008178,
+                "rawEndTime": 1684540010643,
                 "thinkTime": 0.0,
-                "wastedTime": 0.323594331741333
+                "wastedTime": 0.44783973693847659
             }
         ]
     }

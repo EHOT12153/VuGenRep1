@@ -15,6 +15,8 @@ Action()
 		"IgnoreRedirections=No",
 		"RequestUrl=*/nav.pl*",
 		LAST);
+		
+		lr_start_transaction("loginPage");
 
 	web_reg_find("Text=Web Tours Navigation Bar",
 		LAST);
@@ -29,13 +31,16 @@ Action()
 		"Mode=HTML", 
 		LAST);
 
+		
 	
 
 	lr_think_time(10);
+	
+	lr_end_transaction("loginPage", LR_AUTO);
 
 	login();
 
-	lr_start_transaction("itinenraryTray");
+	lr_start_transaction("checkItinerary");
 	
 
 	web_reg_find("Text={firstname} {lastname}",LAST);
@@ -69,7 +74,7 @@ Action()
 //	lr_save_string(lr_paramarr_idx("flightID", atoi(lr_paramarr_random("checkbox"))), " randomflightID");
 
 
-	lr_end_transaction("itinenraryTray",LR_AUTO);
+	lr_end_transaction("checkItinerary",LR_AUTO);
 
 	lr_think_time(35);
 

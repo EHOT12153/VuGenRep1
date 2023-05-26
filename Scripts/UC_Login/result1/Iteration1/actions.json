@@ -1,0 +1,61 @@
+[
+    {
+        "actionName": "Action",
+        "steps": [
+            {
+                "stepId": "STEP1",
+                "stepName": "Url: WebTours",
+                "infFile": "t2.inf",
+                "time": 1684879625883
+            },
+            {
+                "stepId": "STEP2",
+                "stepName": "Submit Data: login.pl",
+                "infFile": "t3.inf",
+                "time": 1684879626878
+            },
+            {
+                "stepId": "STEP3",
+                "stepName": "Url: Itinerary Button",
+                "infFile": "t4.inf",
+                "time": 1684879628051
+            },
+            {
+                "stepId": "STEP4",
+                "stepName": "Url: Search Flights Button",
+                "infFile": "t5.inf",
+                "time": 1684879629030
+            }
+        ],
+        "transactions": [
+            {
+                "transactionName": "login",
+                "rawStartTime": 1684879625906,
+                "rawEndTime": 1684879626879,
+                "thinkTime": 0.0,
+                "wastedTime": 0.02168130874633789
+            },
+            {
+                "transactionName": "checkItinerary",
+                "rawStartTime": 1684879626896,
+                "rawEndTime": 1684879628082,
+                "thinkTime": 0.0,
+                "wastedTime": 0.04489779472351074
+            },
+            {
+                "transactionName": "flights",
+                "rawStartTime": 1684879628126,
+                "rawEndTime": 1684879629103,
+                "thinkTime": 0.0,
+                "wastedTime": 0.022084951400756837
+            },
+            {
+                "transactionName": "Login",
+                "rawStartTime": 1684879624480,
+                "rawEndTime": 1684879629161,
+                "thinkTime": 0.0,
+                "wastedTime": 0.6405534744262695
+            }
+        ]
+    }
+]

@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\NICK\Desktop\Repository2\Scripts\UC_CheckTicket
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ec:\users\nick\desktop\repository2\scripts\uc_checkticket\\logfile.log
+c:\users\nick\desktop\repository2\scripts\uc_checkticket\\combined_UC_CheckTicket.c
+c:\users\nick\desktop\repository2\scripts\uc_checkticket\\pre_cci.c

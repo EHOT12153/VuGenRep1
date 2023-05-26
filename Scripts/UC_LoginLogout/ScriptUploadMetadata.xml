@@ -28,6 +28,7 @@
     <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UC_LoginLogout.c.pickle" Filter="1" />
     <FileEntry Name="UC_LoginLogout.ci" Filter="1" />
     <FileEntry Name="UC_LoginLogout.prm.bak" Filter="1" />
