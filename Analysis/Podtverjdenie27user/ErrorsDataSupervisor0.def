@@ -1,0 +1,34 @@
+﻿[ErrorsDataSupervisor_BasicInfo]
+NumFilters=1
+
+[AdditionalFilter0]
+DimensionType=Discrete
+InternalDimName=Event Name
+Dimension=Transaction Name
+EqualFlag=1
+DimensionTableName=Event_map
+NumValues=12
+UseEscapeSequence=1
+DimCount=12
+Dim_0=checkItinerary
+Dim_1=chooseFlight
+Dim_2=deleteTicket
+Dim_3=flights
+Dim_4=login
+Dim_5=loginPage
+Dim_6=pageAfterRegistaration
+Dim_7=personalData
+Dim_8=registrationData
+Dim_9=signOut
+Dim_10=signUpPage
+Dim_11=typeData
+LikeMode=0
+
+[DimensionFunctions]
+DimeFuncCount=1
+DimeFuncType0=FuncFragment
+FunctionName_UI0=Think Time
+DimensionName_UI0=Transaction Response Time,Aminimum,Amaximum
+FunctionFragmentValues_UI0=-Include Think Time
+DimensionFragmentValues_UI0=!([Value]-[Think Time])!,!([Aminimum]-[Think Time])!,!([Amaximum]-[Think Time])!
+

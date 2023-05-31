@@ -6,7 +6,7 @@ IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=resl30308268DB
+DataBaseName=resl68094566DB
 DBType=1
 CurrServer=LAPTOP-E944HTL0
 CurrUser=sa
@@ -24,9 +24,9 @@ NumResults=1
 
 [Data Config]
 CollectionMode=3
-IngnoreFlds=Vuser ID
-IngnoreUIFlds=VuserID
-AggSecGran=60
+IngnoreFlds=Vuser ID,Group ID,,Script ID
+IngnoreUIFlds=VuserID,Group Name,Script Name
+AggSecGran=1
 TransAgg=1
 DataPointAgg=1
 WebAgg=1
@@ -34,7 +34,7 @@ MonAgg=0
 ErrAgg=0
 FilterEdge=0
 FSartTime=0
-FEndTime=0
+FEndTime=84600
 
 [Result0]
 LRRID=

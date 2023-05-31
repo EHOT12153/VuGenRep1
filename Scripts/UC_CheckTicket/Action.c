@@ -50,45 +50,8 @@ lr_start_transaction("loginPage");
 
 	lr_think_time(7);
 
-	lr_start_transaction("fellFlightsData");
-	
-	
-	
-	
-
-	web_submit_data("reservations.pl", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t7.inf", 
-		"Mode=HTML", 
-		ITEMDATA, 
-		"Name=advanceDiscount", "Value=0", ENDITEM, 
-		"Name=depart", "Value={Depcity}", ENDITEM, 
-		"Name=departDate", "Value={Depdate}", ENDITEM, 
-		"Name=arrive", "Value={Arrcity}", ENDITEM, 
-		"Name=returnDate", "Value={Arrdate}", ENDITEM, 
-		"Name=numPassengers", "Value=1", ENDITEM, 
-		"Name=seatPref", "Value={seatPref}", ENDITEM, 
-		"Name=seatType", "Value={seatType}", ENDITEM, 
-		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
-		"Name=.cgifields", "Value=seatType", ENDITEM, 
-		"Name=.cgifields", "Value=seatPref", ENDITEM, 
-		"Name=findFlights.x", "Value=49", ENDITEM, 
-		"Name=findFlights.y", "Value=7", ENDITEM, 
-		LAST);
-
-	lr_end_transaction("fellFlightsData",LR_AUTO);
-
-	lr_think_time(53);
-
-	lr_start_transaction("checkFlights");
-	
-	
-		lr_start_transaction("typeData");
-	
-	
+	lr_start_transaction("typeData");
+		
 	
 	web_reg_find("Text=From",
 		LAST);
@@ -176,7 +139,6 @@ lr_start_transaction("loginPage");
 
 	lr_think_time(65);
 
-	lr_end_transaction("checkFlights",LR_AUTO);
 
 	logout();
 	

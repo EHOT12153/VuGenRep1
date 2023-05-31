@@ -14,15 +14,15 @@ GlobalDir=
 }
 
 {ScenarioPrivateConfig
-Path=C:\Users\NICK\Desktop\Repository2\Controller\Otladochnyi.lrs
+Path=C:\Users\NICK\Desktop\Repository2\Controller\MaximumProizvod.lrs
 Author=NICK
 Subject=MaxSearching1
 Description=
 Hosts=1
 Scripts=6
-Groups=0
-Vusers=10
-Tranzactions=0
+Groups=6
+Vusers=27
+Tranzactions=21
 Rendezvous=0
 Result_file=C:\Users\NICK\AppData\Local\Temp\res\res.lrr
 ResCleanName=res
@@ -32,8 +32,8 @@ AutoSetResults=0
 AutoOverwriteResults=0
 BaseResultsName=
 MaxVuserSeedNumberUsed=0
-PlannedNumOfVusers=10
-PrivatePlannedNumOfVusers=10
+PlannedNumOfVusers=27
+PrivatePlannedNumOfVusers=27
 ManualControlDistributionType=-1
 ManualControlAutoAddVusers=1
 Tranzactions=24
@@ -195,6 +195,29 @@ HostSettingsEnableTerminal=0
 
 {TestChief
 
+{uc_registercustomer
+UiName=UC_RegisterCustomer
+Type=1
+SubType=Multi+QTWeb
+ScriptType=11
+Path=..\Scripts\UC_RegisterCustomer\UC_RegisterCustomer.usr
+EmulatedLocation=None
+NVAnalytics=0
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspTZy.889\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 16:36:58\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
+ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=37\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
+Param=
+TDPath=
+TDServer=
+TDDatabase=
+Platform=All
+AstraSubType=0
+Trans=signUpPage
+Trans=pageAfterRegistaration
+Trans=registrationData
+Trans=UC5_CustomerRegistration
+Trans=loginPage
+}
+
 {uc_loginlogout
 UiName=UC_LoginLogout
 Type=1
@@ -203,7 +226,7 @@ ScriptType=11
 Path=..\Scripts\UC_LoginLogout\UC_LoginLogout.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspnM7.177\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 20:49:10\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspyos.887\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 20:49:10\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=100\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
 Param=
 TDPath=
@@ -215,29 +238,6 @@ Trans=UC4_LoginLogout
 Trans=loginPage
 }
 
-{uc_registercustomer
-UiName=UC_RegisterCustomer
-Type=1
-SubType=Multi+QTWeb
-ScriptType=11
-Path=..\Scripts\UC_RegisterCustomer\UC_RegisterCustomer.usr
-EmulatedLocation=None
-NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=usp1sl.175\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 16:36:58\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
-ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=37\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
-Param=
-TDPath=
-TDServer=
-TDDatabase=
-Platform=All
-AstraSubType=0
-Trans=signUpPage
-Trans=pageAfterRegistaration
-Trans=registrationData
-Trans=loginPage
-Trans=UC5_CustomerRegistration
-}
-
 {uc_checkticket
 UiName=UC_CheckTicket
 Type=1
@@ -246,7 +246,7 @@ ScriptType=11
 Path=..\Scripts\UC_CheckTicket\UC_CheckTicket.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspda9.179\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/21 16:35:27\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=usp9lN.891\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/21 16:35:27\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=130\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
 Param=
 TDPath=
@@ -254,11 +254,9 @@ TDServer=
 TDDatabase=
 Platform=All
 AstraSubType=0
-Trans=checkFlights
-Trans=fellFlightsData
 Trans=UC_CheckTicket
-Trans=chooseFlight
 Trans=flights
+Trans=chooseFlight
 Trans=typeData
 Trans=loginPage
 }
@@ -271,7 +269,7 @@ ScriptType=11
 Path=..\Scripts\UC_BuyTicket\UC_BuyTicket.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspbYY.181\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nDisableAED=0\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/05 17:42:11\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspvq6.893\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nDisableAED=0\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/05 17:42:11\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n[RtsConfigfuration]\r\nAUTMode=1\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=39\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
 Param=
 TDPath=
@@ -282,8 +280,8 @@ AstraSubType=0
 Trans=UC1_BuyTicket
 Trans=checkItinerary
 Trans=personalData
-Trans=chooseFlight
 Trans=flights
+Trans=chooseFlight
 Trans=typeData
 Trans=loginPage
 }
@@ -296,7 +294,7 @@ ScriptType=11
 Path=..\Scripts\UC_DeleteTicket\UC_DeleteTicket.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspXRX.183\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 20:39:57\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspZ5E.895\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=0\r\nLogOptions=LogBrief\r\nMsgClassData=0\r\nMsgClassFull=0\r\nMsgClassParameters=0\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/06 20:39:57\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=52\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
 Param=
 TDPath=
@@ -318,7 +316,7 @@ ScriptType=11
 Path=..\Scripts\UC_Login\UC_Login.usr
 EmulatedLocation=None
 NVAnalytics=0
-Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspyH8.185\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/23 21:07:10\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
+Config=[General]\r\nautomatic_nested_transactions=1\r\nAutomaticTransactions=1\r\nDefaultRunLogic=uspnCz.897\r\nEncoding=ANSI\r\nXlBridgeTimeout=120\r\n[Iterations]\r\nIterationPace=IterationASAP\r\nNumOfIterations=1\r\nRandomMax=90\r\nRandomMin=60\r\nStartEvery=60\r\n[Log]\r\nAutoLog=0\r\nAutoLogBufferSize=1\r\nIncludeEnvInfo=1\r\nLogDetail=1\r\nLogOptions=LogExtended\r\nMsgClassData=1\r\nMsgClassFull=1\r\nMsgClassParameters=1\r\nPrintTimeStamp=0\r\n[ThinkTime]\r\nFactor=1\r\nLimit=5\r\nLimitFlag=1\r\nOptions=RECORDED\r\nThinkTimeRandomHigh=150\r\nThinkTimeRandomLow=50\r\n[WEB]\r\nAnalogMode=0\r\nBrowserAcceptEncoding=gzip, deflate\r\nBrowserAcceptLanguage=ru,en-US;q=0.7,en;q=0.3\r\nBrowserType=Microsoft Internet Explorer 4.0\r\nCustomUserAgent=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko\r\nEnableChecks=0\r\nHttpVer=1.1\r\nKeepAlive=1\r\nLogFileWrite=0\r\nLogFileWriteTraceToFile=0\r\nMaxConnections=0\r\nNavigatorBrowserLanguage=ru-RU\r\nNavigatorSystemLanguage=ru-RU\r\nNavigatorUserLanguage=ru-RU\r\nProxyAutoConfigScriptURL=\r\nProxyBypass=\r\nProxyHTTPHost=\r\nProxyHTTPPort=443\r\nProxyHTTPSHost=\r\nProxyHTTPSPort=443\r\nProxyNoLocal=0\r\nProxyPassword=\r\nProxyUseAutoConfigScript=0\r\nProxyUseBrowser=0\r\nProxyUseProxy=0\r\nProxyUseProxyServer=0\r\nProxyUserName=\r\nProxyUseSame=1\r\nRecorderWinCodePage=1251\r\nResetContext=1\r\nSaveSnapshotResources=1\r\nScreenAvailHeight=728\r\nScreenAvailWidth=1366\r\nScreenHeight=768\r\nScreenWidth=1366\r\nSearchForImages=1\r\nStartRecordingGMT=2023/05/23 21:07:10\r\nStartRecordingIsDst=0\r\nSupportCharset=None\r\nUseBrowserAgent=0\r\nUseCustomAgent=1\r\nUseDataFormatExtensions=0\r\nUserHomePage=http://go.microsoft.com/fwlink/?LinkId=625119&clocalename=ru-RU\r\nUTF8InputOutput=0\r\nWebRecorderVersion=10\r\n
 ConfigUsp=[Profile Actions]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=Profile Actions\r\nProfile Actions name=vuser_init,Action,vuser_end\r\n[RunLogicEndRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicEndRoot\r\nMercIniTreeSons=vuser_end\r\nName=End\r\nRunLogicActionOrder=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicEndRoot:vuser_end]\r\nMercIniTreeFather=RunLogicEndRoot\r\nMercIniTreeSectionName=vuser_end\r\nName=vuser_end\r\nRunLogicActionType=VuserEnd\r\nRunLogicObjectKind=Action\r\n[RunLogicErrorHandlerRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicErrorHandlerRoot\r\nMercIniTreeSons=vuser_errorhandler\r\nName=ErrorHandler\r\nRunLogicActionOrder=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicErrorHandlerRoot:vuser_errorhandler]\r\nMercIniTreeFather=RunLogicErrorHandlerRoot\r\nMercIniTreeSectionName=vuser_errorhandler\r\nName=vuser_errorhandler\r\nRunLogicActionType=VuserErrorHandler\r\nRunLogicObjectKind=Action\r\n[RunLogicInitRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicInitRoot\r\nMercIniTreeSons=vuser_init\r\nName=Init\r\nRunLogicActionOrder=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicRunMode=Sequential\r\n[RunLogicInitRoot:vuser_init]\r\nMercIniTreeFather=RunLogicInitRoot\r\nMercIniTreeSectionName=vuser_init\r\nName=vuser_init\r\nRunLogicActionType=VuserInit\r\nRunLogicObjectKind=Action\r\n[RunLogicRunRoot]\r\nMercIniTreeFather=\r\nMercIniTreeSectionName=RunLogicRunRoot\r\nMercIniTreeSons=Action\r\nName=Run\r\nRunLogicActionOrder=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicAfterPaceMax=90\r\nRunLogicAfterPaceMin=60\r\nRunLogicNumOfIterations=1\r\nRunLogicObjectKind=Group\r\nRunLogicPaceConstAfterTime=60\r\nRunLogicPaceConstTime=180\r\nRunLogicPaceType=Const\r\nRunLogicRandomPaceMax=90\r\nRunLogicRandomPaceMin=60\r\nRunLogicRunMode=Sequential\r\n[RunLogicRunRoot:Action]\r\nMercIniTreeFather=RunLogicRunRoot\r\nMercIniTreeSectionName=Action\r\nName=Action\r\nRunLogicActionType=VuserRun\r\nRunLogicObjectKind=Action\r\n
 Param=
 TDPath=
@@ -687,7 +685,15 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=4
+Measurement_0=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
+MeasurementFullPath_0="Running"
+Measurement_1=|||22|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
+MeasurementFullPath_1="Ready"
+Measurement_2=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
+MeasurementFullPath_2="Finished"
+Measurement_3=|||16|||0|||1|||Not_In_Use|||0|||-1|||es_tr_runtime_vusers
+MeasurementFullPath_3="Error"
 Description=Displays the number of Vusers that executed Vuser scripts, and their status, during each second of a load test. This graph is useful for determining the Vuser load on your server at any given moment.
 [9]
 MeasurementsDelimiter=|||
@@ -765,7 +771,11 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=2
+Measurement_0=|||8|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_0="localhost"
+Measurement_1=|||24|||0|||1|||Not_In_Use|||0|||-1|||es_tr_errors_distribution
+MeasurementFullPath_1="uc_deleteticket:Action:63"
 Description=Displays details about the number of errors that accrue during each second of the scenario or session step run.
 [11]
 MeasurementsDelimiter=|||
@@ -804,7 +814,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_vusers_errors_distribution
+MeasurementFullPath_0="uc_deleteticket:Action:63"
 Description=Displays details about the number of Vusers that generate errors during scenario or session step execution.
 [12]
 MeasurementsDelimiter=|||
@@ -999,7 +1011,49 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=21
+Measurement_0=|||29|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_0="vuser_init_Transaction"
+Measurement_1=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_1="loginPage"
+Measurement_2=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_2="login"
+Measurement_3=|||10|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_3="checkItinerary"
+Measurement_4=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_4="flights"
+Measurement_5=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_5="UC4_LoginLogout"
+Measurement_6=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_6="Action_Transaction"
+Measurement_7=|||7|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_7="typeData"
+Measurement_8=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_8="signUpPage"
+Measurement_9=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_9="deleteTicket"
+Measurement_10=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_10="registrationData"
+Measurement_11=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_11="UC_Login"
+Measurement_12=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_12="chooseFlight"
+Measurement_13=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_13="pageAfterRegistaration"
+Measurement_14=|||23|||0|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_14="UC5_CustomerRegistration"
+Measurement_15=|||18|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_15="personalData"
+Measurement_16=|||12|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_16="UC3_DeleteTicket"
+Measurement_17=|||7|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_17="signOut"
+Measurement_18=|||12|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_18="UC_CheckTicket"
+Measurement_19=|||32|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_19="UC1_BuyTicket"
+Measurement_20=|||33|||1|||1|||Not_In_Use|||0|||-1|||es_tr_response_time
+MeasurementFullPath_20="vuser_end_Transaction"
 Description=Displays the average time taken to perform transactions during each second of the load test. This graph helps you determine whether the performance of the server is within acceptable minimum and maximum transaction performance time ranges defined for your system.
 [17]
 MeasurementsDelimiter=|||
@@ -1077,7 +1131,49 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=21
+Measurement_0=|||31|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_0="vuser_init_Transaction"
+Measurement_1=|||30|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_1="loginPage"
+Measurement_2=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_2="login"
+Measurement_3=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_3="checkItinerary"
+Measurement_4=|||5|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_4="flights"
+Measurement_5=|||31|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_5="UC4_LoginLogout"
+Measurement_6=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_6="Action_Transaction"
+Measurement_7=|||14|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_7="typeData"
+Measurement_8=|||18|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_8="signUpPage"
+Measurement_9=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_9="deleteTicket"
+Measurement_10=|||33|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_10="registrationData"
+Measurement_11=|||13|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_11="UC_Login"
+Measurement_12=|||33|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_12="chooseFlight"
+Measurement_13=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_13="UC5_CustomerRegistration"
+Measurement_14=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_14="personalData"
+Measurement_15=|||17|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_15="UC3_DeleteTicket"
+Measurement_16=|||30|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_16="signOut"
+Measurement_17=|||20|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_17="UC_CheckTicket"
+Measurement_18=|||34|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_18="pageAfterRegistaration"
+Measurement_19=|||32|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_19="UC1_BuyTicket"
+Measurement_20=|||30|||1|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_pass
+MeasurementFullPath_20="vuser_end_Transaction"
 Description=Displays the number of successful transactions performed during each second of a load test. This graph helps you determine the actual transaction load on your system at any given moment.
 [19]
 MeasurementsDelimiter=|||
@@ -1155,7 +1251,13 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=3
+Measurement_0=|||34|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_0="Action_Transaction"
+Measurement_1=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_1="checkItinerary"
+Measurement_2=|||20|||0|||1|||Not_In_Use|||0|||-1|||es_tr_tprange_fail
+MeasurementFullPath_2="UC3_DeleteTicket"
 Description=Displays the number of unsuccessful transactions performed during each second of a load test.
 [21]
 MeasurementsDelimiter=|||
@@ -1275,7 +1377,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||25|||0|||1|||Not_In_Use|||0|||-1|||es_tr_total_trpass
+MeasurementFullPath_0="Total Transactions per Second (Passed)"
 Description=Displays the number of all transactions performed during each second of a load test.
 [24]
 MeasurementsDelimiter=|||
@@ -1315,7 +1419,49 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=21
+Measurement_0=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_0="vuser_init_Transaction"
+Measurement_1=|||3|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_1="loginPage"
+Measurement_2=|||6|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_2="login"
+Measurement_3=|||0|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_3="checkItinerary"
+Measurement_4=|||32|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_4="flights"
+Measurement_5=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_5="UC4_LoginLogout"
+Measurement_6=|||6|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_6="Action_Transaction"
+Measurement_7=|||2|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_7="typeData"
+Measurement_8=|||14|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_8="signUpPage"
+Measurement_9=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_9="deleteTicket"
+Measurement_10=|||6|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_10="registrationData"
+Measurement_11=|||12|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_11="UC_Login"
+Measurement_12=|||11|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_12="chooseFlight"
+Measurement_13=|||19|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_13="pageAfterRegistaration"
+Measurement_14=|||16|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_14="UC5_CustomerRegistration"
+Measurement_15=|||18|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_15="personalData"
+Measurement_16=|||11|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_16="UC3_DeleteTicket"
+Measurement_17=|||33|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_17="signOut"
+Measurement_18=|||0|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_18="UC_CheckTicket"
+Measurement_19=|||27|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_19="UC1_BuyTicket"
+Measurement_20=|||28|||1|||1|||Not_In_Use|||0|||-1|||es_tr_trpass
+MeasurementFullPath_20="vuser_end_Transaction"
 Description=Total Pass transaction graph
 [25]
 MeasurementsDelimiter=|||
@@ -1355,7 +1501,13 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=3
+Measurement_0=|||28|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_0="Action_Transaction"
+Measurement_1=|||27|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_1="checkItinerary"
+Measurement_2=|||15|||0|||1|||Not_In_Use|||0|||-1|||es_tr_trfail
+MeasurementFullPath_2="UC3_DeleteTicket"
 Description=Trans/Sec (FAIL)
 [26]
 MeasurementsDelimiter=|||
@@ -1435,7 +1587,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||25|||0|||1|||Not_In_Use|||0|||-1|||mic_conn
+MeasurementFullPath_0="Hits Per Second"
 Description=Displays the number of hits made on the Web server by Vusers during each second of the load test. This graph helps you evaluate the amount of load Vusers generate, in terms of the number of hits.
 [28]
 MeasurementsDelimiter=|||
@@ -1476,7 +1630,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||14|||0|||1|||Not_In_Use|||0|||-1|||Http_and_hit_per_sec_for_offline
+MeasurementFullPath_0="HTTP_200"
 Description=Displays the number of hits made on the Web server by Vusers during each second of the load test. This graph helps you evaluate the amount of load Vusers generate, in terms of the number of hits.
 [29]
 MeasurementsDelimiter=|||
@@ -1516,7 +1672,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||24|||0|||1|||Not_In_Use|||0|||-1|||mic_recv
+MeasurementFullPath_0="Throughput"
 Description=Displays the amount of throughput (in bytes) on the Web server during the load test. Throughput represents the amount of data that the Vusers received from the server at any given second. This graph helps you to evaluate the amount of load Vusers generate, in terms of server throughput.
 [30]
 MeasurementsDelimiter=|||
@@ -1595,7 +1753,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||17|||0|||1|||Not_In_Use|||0|||-1|||HTTP_RC
+MeasurementFullPath_0="HTTP_200"
 Description=Displays the number of the different HTTP status codes returned from the Web server during each second of the load test.
 [32]
 MeasurementsDelimiter=|||
@@ -1713,7 +1873,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||4|||0|||1|||Not_In_Use|||0|||-1|||Retries
+MeasurementFullPath_0="Connection closed by server"
 Description=Displays the number of attempted server connections during each second of the scenario run. A server connection is retried when the initial connection was unauthorized, when proxy authentication is required, when the initial connection was closed by the server, when the initial connection to the server could not be made, or when the server was initially unable to resolve the load generator’s IP address.
 [35]
 MeasurementsDelimiter=|||
@@ -1752,7 +1914,9 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=1
+Measurement_0=|||33|||0|||1|||Not_In_Use|||0|||-1|||Web_Connections
+MeasurementFullPath_0="Connections"
 Description=Displays the number of open TCP/IP connections (y-axis) at each point in time of the scenario or session step (x-axis)
 [36]
 MeasurementsDelimiter=|||
@@ -1791,7 +1955,11 @@ OverlayGraph=0
 Auto_Y_Scale=1
 DefaultMsrAutoScale=0
 Granularities=-1
-MeasurementCount=0
+MeasurementCount=2
+Measurement_0=|||7|||0|||1|||Not_In_Use|||0|||-1|||Web_Connections_Per_Second
+MeasurementFullPath_0="New Connections"
+Measurement_1=|||23|||0|||1|||Not_In_Use|||0|||-1|||Web_Connections_Per_Second
+MeasurementFullPath_1="Connection Shutdowns"
 Description=Displays the number of new TCP/IP connections (y-axis) opened and the number of connections that are shut down each second of the scenario or session step (x-axis).
 [37]
 MeasurementsDelimiter=|||
@@ -2509,66 +2677,66 @@ DefaultMsrAutoScale=1
 Granularities=1
 Is_Resource_Graph=1
 MeasurementCount=30
-Measurement_0=|||5|||0|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_0="% Processor Time (Processor _Total)"
-Measurement_1=|||27|||0|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_1="% Privileged Time (Processor _Total)"
-Measurement_2=|||20|||0|||10|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_2="% Interrupt Time (Processor _Total)"
-Measurement_3=|||30|||0|||10|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_3="Processor Queue Length (System)"
-Measurement_4=|||33|||0|||0,001|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_4="Context Switches/sec (System)"
-Measurement_5=|||29|||0|||0,01|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_5="Interrupts/sec (Processor _Total)"
-Measurement_6=|||23|||0|||0,01|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_6="Available MBytes (Memory)"
-Measurement_7=|||27|||0|||1E-08|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_7="Working Set (Process _Total)"
-Measurement_8=|||22|||0|||10|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_8="Pages/sec (Memory)"
-Measurement_9=|||12|||0|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_9="Page Reads/sec (Memory)"
-Measurement_10=|||34|||0|||1E-07|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_10="Pool Nonpaged Bytes (Memory)"
-Measurement_11=|||4|||0|||1E-07|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_11="Pool Paged Bytes (Memory)"
-Measurement_12=|||10|||0|||0,01|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_12="Page Faults/sec (Memory)"
-Measurement_13=|||25|||0|||1E-08|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_13="Private Bytes (Process _Total)"
-Measurement_14=|||3|||0|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_14="Pool Nonpaged Bytes (Server)"
-Measurement_15=|||21|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_15="Pool Paged Bytes (Server)"
-Measurement_16=|||14|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_16="Pool Paged Failures (Server)"
-Measurement_17=|||15|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_17="Cache Bytes (Memory)"
-Measurement_18=|||28|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_18="System Cache Resident Bytes (Memory)"
-Measurement_19=|||6|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_19="Committed Bytes (Memory)"
-Measurement_20=|||13|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_20="File Data Operations/sec (System)"
-Measurement_21=|||12|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_21="% Disk Time (PhysicalDisk _Total)"
-Measurement_22=|||14|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_22="% Idle Time (PhysicalDisk _Total)"
-Measurement_23=|||10|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_23="Avg. Disk Bytes/Transfer (PhysicalDisk _Total)"
-Measurement_24=|||18|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_24="Avg. Disk Queue Length (PhysicalDisk _Total)"
-Measurement_25=|||10|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_25="Disk Transfers/sec (PhysicalDisk _Total)"
-Measurement_26=|||6|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_26="Split IO/Sec (PhysicalDisk _Total)"
-Measurement_27=|||11|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_27="Free Megabytes (LogicalDisk _Total)"
-Measurement_28=|||34|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_28="Bytes Total/sec (Server)"
-Measurement_29=|||17|||1|||1|||localhost|||1|||-1|||es_rm_svr_res_nt
-MeasurementFullPath_29="Threads (Objects)"
+Measurement_0=|||30|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_0="Threads (Objects)"
+Measurement_1=|||1|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_1="Bytes Total/sec (Server)"
+Measurement_2=|||3|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_2="Free Megabytes (LogicalDisk _Total)"
+Measurement_3=|||18|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_3="Split IO/Sec (PhysicalDisk _Total)"
+Measurement_4=|||29|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_4="Disk Transfers/sec (PhysicalDisk _Total)"
+Measurement_5=|||26|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_5="Avg. Disk Queue Length (PhysicalDisk _Total)"
+Measurement_6=|||2|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_6="Avg. Disk Bytes/Transfer (PhysicalDisk _Total)"
+Measurement_7=|||14|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_7="% Idle Time (PhysicalDisk _Total)"
+Measurement_8=|||5|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_8="% Disk Time (PhysicalDisk _Total)"
+Measurement_9=|||27|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_9="File Data Operations/sec (System)"
+Measurement_10=|||15|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_10="Committed Bytes (Memory)"
+Measurement_11=|||26|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_11="System Cache Resident Bytes (Memory)"
+Measurement_12=|||4|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_12="Cache Bytes (Memory)"
+Measurement_13=|||16|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_13="Pool Paged Failures (Server)"
+Measurement_14=|||9|||0|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_14="Pool Paged Bytes (Server)"
+Measurement_15=|||28|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_15="Pool Nonpaged Bytes (Server)"
+Measurement_16=|||34|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_16="Private Bytes (Process _Total)"
+Measurement_17=|||19|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_17="Page Faults/sec (Memory)"
+Measurement_18=|||17|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_18="Pool Paged Bytes (Memory)"
+Measurement_19=|||31|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_19="Pool Nonpaged Bytes (Memory)"
+Measurement_20=|||28|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_20="Page Reads/sec (Memory)"
+Measurement_21=|||11|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_21="Pages/sec (Memory)"
+Measurement_22=|||5|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_22="Working Set (Process _Total)"
+Measurement_23=|||34|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_23="Available MBytes (Memory)"
+Measurement_24=|||33|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_24="Interrupts/sec (Processor _Total)"
+Measurement_25=|||4|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_25="Context Switches/sec (System)"
+Measurement_26=|||14|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_26="Processor Queue Length (System)"
+Measurement_27=|||23|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_27="% Interrupt Time (Processor _Total)"
+Measurement_28=|||6|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_28="% Privileged Time (Processor _Total)"
+Measurement_29=|||28|||1|||1|||localhost1|||1|||-1|||es_rm_svr_res_nt
+MeasurementFullPath_29="% Processor Time (Processor _Total)"
 Description=Displays a summary of the System Resources usage for each Windows based host.
 [55]
 MeasurementsDelimiter=|||
@@ -4990,11 +5158,11 @@ SamplingRate=IntV1|3000
 {ResourceMonitoring
 ResourceMonitoringDomainVersion=IntV1|1
 EnabledMode=StringV1|True
-DualMonitorsMap=StringV1|<DualMonitor><Monitor name="es_rm_svr_res_nt" IsLRMonitorActive="1"/></DualMonitor>
+DualMonitorsMap=StringV1|<DualMonitor><Monitor name="es_rm_svr_res_nt" IsLRMonitorActive="1"/><Monitor name="" IsLRMonitorActive="1"/></DualMonitor>
 
 {ResourceMonitoringMachines
 ResourceMonitoringMachinesVersion=IntV1|1
-MachinesCount=IntV1|1
+MachinesCount=IntV1|2
 
 {ResourceMonitoredMachine
 ResourceMonitoringMachineVersion=IntV1|1
@@ -5456,6 +5624,467 @@ DisplayerName=StringV1|es_rm_svr_res_nt
 }
 }
 }
+
+{ResourceMonitoredMachine
+ResourceMonitoringMachineVersion=IntV1|1
+MonitoredMachineName=StringV1|localhost1
+MonMachinePlatform=IntV1|14
+
+{ItemList
+CMPIListVersion=IntV1|1
+ListCount=IntV1|30
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Objects|Threads|
+Name=StringV1|Threads (Objects)
+Data=StringV1|
+Description=StringV1|Threads is the number of threads in the computer at the time of data collection.  Notice that this is an instantaneous count, not an average over the time interval.  A thread is the basic executable entity that can execute instructions in a processor.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Server|Bytes Total/sec
+Name=StringV1|Bytes Total/sec (Server)
+Data=StringV1|
+Description=StringV1|The number of bytes the server has sent to and received from the network.  This value provides an overall indication of how busy the server is.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|LogicalDisk|Free Megabytes|_Total
+Name=StringV1|Free Megabytes (LogicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Free Megabytes displays the unallocated space, in megabytes, on the disk drive in megabytes. One megabyte is equal to 1,048,576 bytes.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|Split IO/Sec|_Total
+Name=StringV1|Split IO/Sec (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Split IO/Sec reports the rate at which I/Os to the disk were split into multiple I/Os. A split I/O may result from requesting data of a size that is too large to fit into a single I/O or that the disk is fragmented.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|Disk Transfers/sec|_Total
+Name=StringV1|Disk Transfers/sec (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Disk Transfers/sec is the rate of read and write operations on the disk.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|Avg. Disk Queue Length|_Total
+Name=StringV1|Avg. Disk Queue Length (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Avg. Disk Queue Length is the average number of both read and write requests that were queued for the selected disk during the sample interval.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|Avg. Disk Bytes/Transfer|_Total
+Name=StringV1|Avg. Disk Bytes/Transfer (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Avg. Disk Bytes/Transfer is the average number of bytes transferred to or from the disk during write or read operations.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|% Idle Time|_Total
+Name=StringV1|% Idle Time (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|% Idle Time reports the percentage of time during the sample interval that the disk was idle.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|PhysicalDisk|% Disk Time|_Total
+Name=StringV1|% Disk Time (PhysicalDisk _Total)
+Data=StringV1|
+Description=StringV1|Disk Time is the percentage of elapsed time that the selected disk drive is busy servicing read or write requests.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|System|File Data Operations/sec|
+Name=StringV1|File Data Operations/sec (System)
+Data=StringV1|
+Description=StringV1|File Data Operations per second is the rate that the computer is issuing Read and Write operations to file system devices.  It does not include File Control Operations.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Committed Bytes|
+Name=StringV1|Committed Bytes (Memory)
+Data=StringV1|
+Description=StringV1|Committed Bytes is the amount of committed virtual memory, in bytes. Committed memory is the physical memory which has space reserved on the disk paging file(s). There can be one or more paging files on each physical drive. This counter displays the last observed value only; it is not an average.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|System Cache Resident Bytes|
+Name=StringV1|System Cache Resident Bytes (Memory)
+Data=StringV1|
+Description=StringV1|System Cache Resident Bytes is the size, in bytes, of the pageable operating system code in the file system cache. This value includes only current physical pages and does not include any virtual memory pages not currently resident. It does equal the System Cache value shown in Task Manager. As a result, this value may be smaller than the actual amount of virtual memory in use by the file system cache. This value is a component of Memory\\System Code Resident Bytes which represents all pageable operating system code that is currently in physical memory. This counter displays the last observed value only; it is not an average.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Cache Bytes|
+Name=StringV1|Cache Bytes (Memory)
+Data=StringV1|
+Description=StringV1|Cache Bytes is the sum of the Memory\\System Cache Resident Bytes, Memory\\System Driver Resident Bytes, Memory\\System Code Resident Bytes, and Memory\\Pool Paged Resident Bytes counters.  This counter displays the last observed value only; it is not an average.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Server|Pool Paged Failures|
+Name=StringV1|Pool Paged Failures (Server)
+Data=StringV1|
+Description=StringV1|The number of times allocations from paged pool have failed.  Indicates that the computer's physical memory or paging file are too small.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Server|Pool Paged Bytes|
+Name=StringV1|Pool Paged Bytes (Server)
+Data=StringV1|
+Description=StringV1|The number of bytes of pageable computer memory the server is currently using.  Can help in determining good values for the MaxPagedMemoryUsage parameter.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Server|Pool Nonpaged Bytes|
+Name=StringV1|Pool Nonpaged Bytes (Server)
+Data=StringV1|
+Description=StringV1|The number of bytes of non-pageable computer memory the server is using.  This value is useful for determining the values of the MaxNonpagedMemoryUsage value entry in the Windows NT Registry.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Process|Private Bytes|_Total
+Name=StringV1|Private Bytes (Process _Total)
+Data=StringV1|
+Description=StringV1|Private Bytes is the current number of bytes this process has allocated that cannot be shared with other processes.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Page Faults/sec|
+Name=StringV1|Page Faults/sec (Memory)
+Data=StringV1|
+Description=StringV1|Page Faults/sec is a count of the Page Faults in the processor.  A page fault occurs when a process refers to a virtual memory page that is not in its Working Set in main memory.  A Page Fault will not cause the page to be fetched from disk if that page is on the standby list, and hence already in main memory, or if it is in use by another process with whom the page is shared.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Pool Paged Bytes|
+Name=StringV1|Pool Paged Bytes (Memory)
+Data=StringV1|
+Description=StringV1|Pool Paged Bytes is the size, in bytes, of the paged pool, an area of system memory (physical memory used by the operating system) for objects that can be written to disk when they are not being used.  Memory\\Pool Paged Bytes is calculated differently than Process\\Pool Paged Bytes, so it might not equal Process\\Pool Paged Bytes\\_Total. This counter displays the last observed value only; it is not an average.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Pool Nonpaged Bytes|
+Name=StringV1|Pool Nonpaged Bytes (Memory)
+Data=StringV1|
+Description=StringV1|Pool Nonpaged Bytes is the number of bytes in the Nonpaged Pool, a system memory area where space is acquired by operating system components as they accomplish their appointed tasks.  Nonpaged Pool pages cannot be paged out to the paging file, but instead remain in main memory as long as they are allocated.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Page Reads/sec|
+Name=StringV1|Page Reads/sec (Memory)
+Data=StringV1|
+Description=StringV1|Page Reads/sec is the rate at which the disk was read to resolve hard page faults. It shows the number of reads operations, without regard to the number of pages retrieved in each operation. Hard page faults occur when a process references a page in virtual memory that is not in working set or elsewhere in physical memory, and must be retrieved from disk. This counter is a primary indicator of the kinds of faults that cause system-wide delays. It includes read operations to satisfy faults in the file system cache (usually requested by applications) and in non-cached mapped memory files. Compare the value of Memory\\Pages Reads/sec to the value of Memory\\Pages Input/sec to determine the average number of pages read during each operation.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Pages/sec|
+Name=StringV1|Pages/sec (Memory)
+Data=StringV1|
+Description=StringV1|Pages/sec is the number of pages read from the disk or written to the disk to resolve memory references to pages that were not in memory at the time of the reference.  This is the sum of Pages Input/sec and Pages Output/sec.  This counter includes paging traffic on behalf of the system Cache to access file data for applications.  This value also includes the pages to/from non-cached mapped memory files.  This is the primary counter to observe if you are concerned about excessive memory pressure (that is, thrashing), and the excessive paging that may result.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Process|Working Set|_Total
+Name=StringV1|Working Set (Process _Total)
+Data=StringV1|
+Description=StringV1|Working Set is the current size, in bytes, of the Working Set of this process. The Working Set is the set of memory pages touched recently by the threads in the process. If free memory in the computer is above a threshold, pages are left in the Working Set of a process even if they are not in use.  When free memory falls below a threshold, pages are trimmed from Working Sets. If they are needed they will then be soft-faulted back into the Working Set before leaving main memory.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Memory|Available MBytes|
+Name=StringV1|Available MBytes (Memory)
+Data=StringV1|
+Description=StringV1|Available MBytes is the amount of physical memory available to processes running on the computer, in Megabytes, rather than bytes as reported in Memory\\Available Bytes. It is calculated by adding the amount of space on the Zeroed, Free, and Stand by memory lists. Free memory is ready for use; Zeroed memory are pages of memory filled with zeros to prevent later processes from seeing data used by a previous process; Standby memory is memory removed from a process' working set (its physical memory) on route to disk, but is still available to be recalled.  This counter displays the last observed value only; it is not an average.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Processor|Interrupts/sec|_Total
+Name=StringV1|Interrupts/sec (Processor _Total)
+Data=StringV1|
+Description=StringV1|Interrupts/sec is the average number of hardware interrupts the processor is receiving and servicing in each second. It does not include DPCs, which are counted separately. This value is an indirect indicator of the activity of devices that generate interrupts, such as the system clock, the mouse, disk drivers, data communication lines, network interface cards and other peripheral devices. These devices normally interrupt the processor when they have completed a task or require attention. Normal thread execution is suspended during interrupts. Most system clocks interrupt the processor every 10 milliseconds, creating a background of interrupt activity. This counter displays the difference between the values observed in the last two samples, divided by the duration of the sample interval.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|System|Context Switches/sec|
+Name=StringV1|Context Switches/sec (System)
+Data=StringV1|
+Description=StringV1|Context Switches/sec is the combined rate at which all processors on the computer are switched from one thread to another.  Context switches occur when a running thread voluntarily relinquishes the processor, is preempted by a higher priority ready thread, or switches between user-mode and privileged (kernel) mode to use an Executive or subsystem service.  It is the sum of Thread\\Context Switches/sec for all threads running on all processors in the computer and is measured in numbers of switches.  There are context switch counters on the System and Thread objects. This counter displays the difference between the values observed in the last two samples, divided by the duration of the sample interval.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|System|Processor Queue Length|
+Name=StringV1|Processor Queue Length (System)
+Data=StringV1|
+Description=StringV1|Processor Queue Length is the instantaneous length of the processor queue in units of threads.  This counter is always 0 unless you are also monitoring a thread counter.  All processors use a single queue in which threads wait for processor cycles.  This length does not include the threads that are currently executing.  A sustained processor queue length greater than two generally indicates processor congestion.  This is an instantaneous count, not an average over the time interval.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Processor|% Interrupt Time|_Total
+Name=StringV1|% Interrupt Time (Processor _Total)
+Data=StringV1|
+Description=StringV1|% Interrupt Time is the time the processor spends receiving and servicing hardware interrupts during sample intervals. This value is an indirect indicator of the activity of devices that generate interrupts, such as the system clock, the mouse, disk drivers, data communication lines, network interface cards and other peripheral devices. These devices normally interrupt the processor when they have completed a task or require attention. Normal thread execution is suspended during interrupts. Most system clocks interrupt the processor every 10 milliseconds, creating a background of interrupt activity. suspends normal thread execution during interrupts. This counter displays the average busy time as a percentage of the sample time.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Processor|% Privileged Time|_Total
+Name=StringV1|% Privileged Time (Processor _Total)
+Data=StringV1|
+Description=StringV1|% Privileged Time is the percentage of elapsed time that the process threads spent executing code in privileged mode.  When a Windows system service in called, the service will often run in privileged mode to gain access to system-private data. Such data is protected from access by threads executing in user mode. Calls to the system can be explicit or implicit, such as page faults or interrupts. Unlike some early operating systems, Windows uses process boundaries for subsystem protection in addition to the traditional protection of user and privileged modes. Some work done by Windows on behalf of the application might appear in other subsystem processes in addition to the privileged time in the process.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+
+{MonItemPlus
+MonItemPlusVersion=IntV1|1
+MonitorId=IntV1|5705
+
+{MonItem
+CustomPerfItemV1=IntV1|1
+ObjId=StringV1|Processor|% Processor Time|_Total
+Name=StringV1|% Processor Time (Processor _Total)
+Data=StringV1|
+Description=StringV1|% Processor Time is the percentage of time that the processor is executing a non-Idle thread.  This counter was designed as a primary indicator of processor activity.  It is calculated by measuring the time that the processor spends executing the thread of the Idle process in each sample interval, and subtracting that value from 100%.  (Each processor has an Idle thread which consumes cycles when no other threads are ready to run). It can be viewed as the percentage of the sample interval spent doing useful work.  This counter displays the average percentage of busy time observed during the sample interval.  It is calculated by monitoring the time the service was inactive, and then subtracting that value from 100%.
+ObjectType=IntV1|0
+DisplayerName=StringV1|es_rm_svr_res_nt
+}
+}
+}
+}
 }
 
 {J2EEMMonitoredItems
@@ -5466,7 +6095,7 @@ ItemsNumber=IntV1|0
 }
 
 {ScenarioDiagnostics
-XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="6470eaebe" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
+XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "OracleDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type= "WebPage" enabled= "1" ></Mediator><Mediator type= "J2EE" enabled= "0" ></Mediator><Mediator type= "SiebelDB" enabled= "0" ><Machine name = "" type = "Win2000" ><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY></TOPOLOGY></Mediator><Mediator type="SAP" enabled="0"><Machine name="" type="Win2000"><Connection><Firewall enabled="0" listener=""/></Connection></Machine><TOPOLOGY><SERVER host="" instance="" RouterString=""><LOGIN username="" password="6477a1cfe" client_num=""/></SERVER></TOPOLOGY></Mediator></Mediators>
 }
 
 {ScenarioSchedulerConfig
@@ -5494,7 +6123,7 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
                 <StartCondition>
                   <PrevAction />
                 </StartCondition>
-                <TotalVusersNumber>10</TotalVusersNumber>
+                <TotalVusersNumber>27</TotalVusersNumber>
               </Run>
               <Duration>
                 <StartCondition>
@@ -5502,15 +6131,11 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
                 </StartCondition>
                 <RunFor>3720</RunFor>
               </Duration>
-              <RampDownAll>
+              <StopAll>
                 <StartCondition>
                   <PrevAction />
                 </StartCondition>
-                <Batch>
-                  <Count>10</Count>
-                  <Interval>60</Interval>
-                </Batch>
-              </RampDownAll>
+              </StopAll>
             </DynamicScheduling>
           </Scheduling>
         </Global>
@@ -5526,13 +6151,13 @@ XMLData=<Mediators distribution = "1" enabled= "1" ><Mediator type= "SARM" enabl
 {ScenarioGroupsData
 
 {SCHED_GROUP_DATA
-SCHED_GROUP_NAME=uc_registercustomer
+SCHED_GROUP_NAME=uc_loginlogout
 TEST_PERCENT_DISTRIBUTION=10,00
 SCHED_USE_ANY_HOST=1
 }
 
 {SCHED_GROUP_DATA
-SCHED_GROUP_NAME=uc_loginlogout
+SCHED_GROUP_NAME=uc_registercustomer
 TEST_PERCENT_DISTRIBUTION=10,00
 SCHED_USE_ANY_HOST=1
 }
@@ -5563,7 +6188,7 @@ SCHED_USE_ANY_HOST=1
 }
 
 {ScenarioSLAConfig
-<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>vuser_end_Transaction</Tx><Tx>UC_Login</Tx><Tx>UC1_BuyTicket</Tx><Tx>checkFlights</Tx><Tx>signUpPage</Tx><Tx>checkItinerary</Tx><Tx>UC4_LoginLogout</Tx><Tx>UC3_DeleteTicket</Tx><Tx>vuser_init_Transaction</Tx><Tx>pageAfterRegistaration</Tx><Tx>fellFlightsData</Tx><Tx>personalData</Tx><Tx>UC_CheckTicket</Tx><Tx>registrationData</Tx><Tx>flights</Tx><Tx>chooseFlight</Tx><Tx>deleteTicket</Tx><Tx>typeData</Tx><Tx>Action_Transaction</Tx><Tx>UC5_CustomerRegistration</Tx><Tx>loginPage</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale></SLARules></SLA>
+<?xml version="1.0" encoding="UTF-8"?><SLA Version="1.0"><TxList><Tx>vuser_end_Transaction</Tx><Tx>UC_Login</Tx><Tx>UC1_BuyTicket</Tx><Tx>signUpPage</Tx><Tx>checkItinerary</Tx><Tx>UC4_LoginLogout</Tx><Tx>UC3_DeleteTicket</Tx><Tx>vuser_init_Transaction</Tx><Tx>pageAfterRegistaration</Tx><Tx>personalData</Tx><Tx>UC_CheckTicket</Tx><Tx>registrationData</Tx><Tx>flights</Tx><Tx>chooseFlight</Tx><Tx>deleteTicket</Tx><Tx>typeData</Tx><Tx>Action_Transaction</Tx><Tx>UC5_CustomerRegistration</Tx><Tx>loginPage</Tx></TxList><SLARules><TrackingPeriodType>Default</TrackingPeriodType><TrackingPeriodValue></TrackingPeriodValue><TrackingPeriodTimeScale></TrackingPeriodTimeScale><RulesGroup Type="PercentileRule"><Name>Percentile Based Rules</Name><PercentileRule Name="transaction_response_time_percentile_checkItinerary"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>checkItinerary</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_chooseFlight"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>chooseFlight</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_deleteTicket"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>deleteTicket</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_flights"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>flights</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_loginPage"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>loginPage</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_pageAfterRegistaration"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>pageAfterRegistaration</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_personalData"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>personalData</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_registrationData"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>registrationData</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_signUpPage"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>signUpPage</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_typeData"><Percentage>90</Percentage><Value>2.5</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>typeData</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC_CheckTicket"><Percentage>90</Percentage><Value>130</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC_CheckTicket</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC_Login"><Percentage>90</Percentage><Value>180</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC_Login</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC1_BuyTicket"><Percentage>90</Percentage><Value>39</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC1_BuyTicket</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC3_DeleteTicket"><Percentage>90</Percentage><Value>52</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC3_DeleteTicket</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC4_LoginLogout"><Percentage>90</Percentage><Value>100</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC4_LoginLogout</SubMeasurement></PercentileRule><PercentileRule Name="transaction_response_time_percentile_UC5_CustomerRegistration"><Percentage>90</Percentage><Value>37</Value><Measurement>transaction_response_time_percentile</Measurement><SubMeasurement>UC5_CustomerRegistration</SubMeasurement></PercentileRule></RulesGroup></SLARules></SLA>
 }
 
 {ScenarioSEVConfig
@@ -5586,6 +6211,12 @@ localhost=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToGroup
+UC_BuyTicket=00000000-0000-0000-0000-000000000000
+UC_CheckTicket=00000000-0000-0000-0000-000000000000
+UC_DeleteTicket=00000000-0000-0000-0000-000000000000
+UC_Login=00000000-0000-0000-0000-000000000000
+UC_LoginLogout=00000000-0000-0000-0000-000000000000
+UC_RegisterCustomer=00000000-0000-0000-0000-000000000000
 }
 
 {LocAssignedToTest

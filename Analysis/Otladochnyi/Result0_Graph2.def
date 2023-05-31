@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T30390374T
+TableName=T68178653T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -118,9 +118,9 @@ DimeFuncCount=0
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=60
-BaseGranularityUIName=
-MinimumDefaultGranularity=60
+Granularity=32
+BaseGranularityUIName=Throughput
+MinimumDefaultGranularity=5
 
 [Alerts]
 Number Of Alerts=0
